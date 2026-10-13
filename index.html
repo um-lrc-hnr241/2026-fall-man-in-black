@@ -3,30 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Portfolio Site</title>
+  <title>St. Augustine in Westworld | Song Journals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <p class="site-title"><a href="index.html">Our Portfolio Site</a></p>
-    <nav aria-label="Main">
+    <p class="site-title"><a href="index.html">St. Augustine <span>×</span> Westworld</a></p>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
+        <li class="journal-menu">
+          <details>
+            <summary>Song Journals</summary>
+            <div class="journal-menu-content">
+              <p>Journal pages will appear here when the source documents are available.</p>
+            </div>
+          </details>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <h1>Welcome</h1>
-    <p>This is your group's starter site. Nothing here is final.</p>
-    <p>Fill in your planning Doc, then leave a comment that starts with
-      <code>@agent build</code> to have the agent replace this page with your own.</p>
+    <section class="hero-panel" aria-labelledby="page-title">
+      <p class="eyebrow">Reflections on faith, memory, and the human condition</p>
+      <h1 id="page-title">St. Augustine in <cite>Westworld</cite></h1>
+      <p class="intro">A collection of our team's writing on the ways Augustine's questions about the self, desire, and truth echo through the world of <cite>Westworld</cite>.</p>
+      <p>Explore the song journals to follow our conversations between a fourth-century thinker and a modern story about memory, freedom, and what it means to be human.</p>
+    </section>
+    <section class="project-note" id="journals" aria-labelledby="journals-heading">
+      <h2 id="journals-heading">Song Journals</h2>
+      <p>Our journal pages will be gathered here. The source journal documents were not included with the available site assets.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>Built by our group with help from an AI agent.</p>
+    <p>A student project exploring St. Augustine and <cite>Westworld</cite>.</p>
   </footer>
 </body>
 </html>
