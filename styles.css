@@ -113,6 +113,26 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+.project-quote {
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.25rem;
+  border-left: 0.25rem solid #bd542e;
+  background: rgba(17, 16, 15, 0.94);
+  color: var(--text);
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-style: italic;
+}
+
+.project-quote p {
+  margin: 0 0 0.5rem;
+}
+
+.project-quote cite {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
 h1 {
   max-width: 18ch;
   margin-top: 0.25rem;
@@ -125,8 +145,54 @@ h1 {
 .hero-panel {
   margin: 2.5rem 0 1.5rem;
   padding: clamp(1.5rem, 5vw, 3.5rem);
+  position: relative;
+  overflow: hidden;
   border-left: 0.35rem solid var(--accent);
   background: rgba(17, 16, 15, 0.91);
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 1rem;
+  width: min(10rem, 28%);
+  height: 80%;
+  pointer-events: none;
+  opacity: 0.45;
+  background:
+    linear-gradient(90deg, transparent 0 42%, #d66b37 42% 47%, transparent 47%) 0 0 / 2.5rem 2.5rem,
+    linear-gradient(0deg, transparent 0 42%, #d66b37 42% 47%, transparent 47%) 0 0 / 2.5rem 2.5rem,
+    radial-gradient(ellipse at center, rgba(177, 55, 23, 0.65), transparent 72%);
+  box-shadow: 0 0 2rem rgba(177, 55, 23, 0.35);
+}
+
+.hero-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.audio-feature {
+  max-width: 34rem;
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  background: rgba(17, 16, 15, 0.94);
+}
+
+.audio-feature h2 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+
+.audio-feature iframe {
+  display: block;
+  width: 100%;
+  min-height: 152px;
+  border: 0;
+  border-radius: 0.75rem;
 }
 
 .eyebrow {
