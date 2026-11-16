@@ -184,8 +184,9 @@ h1 {
 
 .audio-feature {
   max-width: 34rem;
-  margin: 2rem 0;
+  margin: 1rem auto 2rem;
   padding: 1rem 1.25rem;
+  text-align: center;
   border: 1px solid var(--border);
   background: rgba(17, 16, 15, 0.94);
 }
